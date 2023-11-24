@@ -1,0 +1,29 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  background-color: rgb(162, 147, 147);
+  height: 170px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5rem;
+  transform: translate(50% , 50%);
+  perspective: 300px;
+  perspective-origin: left top;
+}
+.transform3D{
+  background-color: bisque;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0, 0 , 0px);
+}

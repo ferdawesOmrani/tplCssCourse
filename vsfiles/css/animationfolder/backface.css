@@ -1,0 +1,43 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  margin: 40px auto;
+  width: 200px;
+  perspective: 800px;
+}
+.card{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0.5px 0.5px 10px rgb(197, 195, 195);
+  transform-style: preserve-3d; /* by default flat */
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: translate(100px) rotateY(-180deg);
+}
+
+.face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bold;
+  backface-visibility: hidden;
+}
+.front{
+  background-color: bisque;
+}
+.back{
+  background-color: rgb(13, 183, 129);
+  transform: rotateY(180deg);
+}
